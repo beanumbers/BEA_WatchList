@@ -21,17 +21,49 @@
 /* Define custom CSS for square frame */
 .square-frame {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #e6c619; /* Color border */
-    width: 300px; /* Fixed width for square */
-    height: 250px; /* Fixed height for square */
-    border-radius: 15px; /* Optional: rounded corners */
-    box-shadow: box-shadow: 0px 0px 24px -2px rgba(173,167,8,1);
-    -webkit-box-shadow: 0px 0px 24px -2px rgba(173,167,8,1);
-    -moz-box-shadow: 0px 0px 24px -2px rgba(173,167,8,1); /* Optional: shadow effect */
-    margin: 10px; /* Space around the frame */
-    font-size: 16px;
-    font-weight: bold;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    border: 2px solid #444; /* Subtle dark border */
+    border-radius: 15px;
+    width: 100%;
+    /* height: 350px;  Fixed height for the square */
+    padding: 20px;
+    margin: 10px;
+    background-color: #222; /* Dark background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for dark mode */
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #f1f1f1; /* Light text for contrast */
     text-align: center;
+}
+
+.square-frame:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2); /* Highlighted shadow */
+}
+
+.ticker {
+    font-size: 1.25em !important; /* Larger font for ticker */
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.75em !important; /* Slightly smaller font for price */
+    font-weight: bold;
+}
+
+.change {
+    font-size: 1.75em !important; /* Same size as price */
+}
+
+.positive {
+    font-size: 1.25em !important;
+    font-weight: bold;
+    color: #4caf50; /* Green for positive changes */
+}
+
+.negative {
+    font-size: 1.25em !important;
+    font-weight: bold;
+    color: #f44336; /* Red for negative changes */
 }

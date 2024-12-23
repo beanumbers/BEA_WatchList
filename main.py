@@ -28,11 +28,11 @@ st.markdown(
 # Page Navigation
 pages = {
     "Home": [
-        st.Page("pages/home.py", title = "Today"),
+        st.Page("tabs/home.py", title ="Today"),
     ],
     "Dashboards": [
-        st.Page("pages/page_1.py", title = "Watch List"),
-        st.Page("pages/page_2.py",title = "Portfolio")
+        st.Page("tabs/page_1.py", title ="Watch List"),
+        st.Page("tabs/page_2.py", title ="Portfolio")
     ],
 }
 
