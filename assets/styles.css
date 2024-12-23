@@ -39,7 +39,7 @@
 
 .square-frame:hover {
     transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2); /* Highlighted shadow */
+    box-shadow: 0px 6px 12px #e6c619; /* Highlighted shadow */
 }
 
 .ticker {
